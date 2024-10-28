@@ -1,0 +1,26 @@
+<div>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <h3 style="font-weight: bold;">{{ this.pokemon ? this.pokemon.name : "--" }}</h3>
+
+    <table id="abilitiesTable">
+        {{printAbilities()}}
+    </table>
+
+    <div style="display: flex; flex-direction: row; gap: 10px;">
+        <img *ngIf="this.pokemon" [style.height]="this.pokemon.height" [src]="this.pokemon.sprites.M_back" alt="Back sprite">
+        <img *ngIf="this.pokemon" [style.height]="this.pokemon.height" [src]="this.pokemon.sprites.M_front" alt="Front sprite">
+    </div>
+
+    <div style="display: flex; flex-direction: row; gap: 10px;">
+        <img *ngIf="this.pokemon" [style.height]="this.pokemon.height" [src]="this.pokemon.sprites.M_back_shiny" alt="Shiny back sprite">
+        <img *ngIf="this.pokemon" [style.height]="this.pokemon.height" [src]="this.pokemon.sprites.M_front_shiny" alt="Shiny front sprite">
+    </div>
+</div>
