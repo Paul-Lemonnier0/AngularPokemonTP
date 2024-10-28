@@ -1,4 +1,6 @@
-# Pokedemo
+# TP Angular Pokemon
+
+Ce TP a été réalisé dans son entiereté. Afin de lancer le serveur, il faut suivre la documentation ci-dessous :
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
 
